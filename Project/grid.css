@@ -1,0 +1,214 @@
+/* css reset from meyerweb */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* My style */
+#wrapper{
+    /* background-color: yellow; */
+    /* display: grid;
+    justify-items: center; */
+}
+nav{
+    /* border: .1rem solid green; */
+    display: grid;
+    /* grid-template-areas:'head . .'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    align-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: black;
+    color: aliceblue;
+    /* width: 100%; */
+}
+figure{
+    /* border: .1rem solid red; */
+    width: 40%;
+    text-align: center;
+}
+nav>ul{
+    /* border: .1rem solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-items: space-between; */
+    gap: 1rem;
+}
+ul>li{
+    /* border: .1rem solid green; */
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+nav>form{
+    /* border: .1rem solid grey;  */
+    text-align: right;
+}
+form>input[type = 'search']:hover{
+    outline: .1rem solid red
+}
+form>button[type = 'submit']:hover{
+    background-color: green;
+    color: white;
+}
+form>input[type = 'search'],  button[type = 'Submit']{
+    height: 5vh;
+    /* background-color: brown; */
+}
+/* .product{
+    border:.2rem solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+} */
+.product{
+    display: grid;
+    background-image: url(Lands.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    gap: 2rem;
+    /* align-content: space-between; */
+    justify-items: center;
+    height: 100dvh;
+    margin: 2rem;
+    /* background: url(FB\ Banner1.jpg), url(Lands.png) */
+
+}
+.product>figure{
+    border: .1rem solid blue;
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    }
+/* #endline{
+    border: .2rem solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    height: 100vh;
+} */
+/* .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8{
+    border: .1rem solid blue;
+}
+.box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+} */ 
+/* section{
+    border: 1rem ridge green;
+} */
+/* footer{
+    background-color: rgb(53, 2, 101);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2rem;
+}
+footer>div,ul{
+    border: .1rem solid white;
+    ;
+}
+footer>ul>li>a{
+    align-content:center;
+}
+footer>div>p{
+    width: 80%;
+} */
+
+#footer{
+    border: .2rem solid black;
+    display: grid;
+    padding:1rem;
+    align-content:space-around;
+    grid-template-rows: repeat(autofill, minmax(20vh 1fr));
+    gap:1rem;
+    background-color: aliceblue;
+}
+.baseline{
+    /* border:.2rem ridge green; */
+    display: grid;
+    justify-content: center;
+    gap:.8rem;
+    color: white;
+    background-color: black;
+}
+#endline{
+    border: .2rem solid green;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(580px, 100px));
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+#endline>form{
+    border: .2rem solid green;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+}
+#endline>ul{
+    border: .2rem solid red;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+}
+#contact{
+    border: .2rem solid blue;
+}
+#endline>ul>li{
+    border: .1rem solid yellow;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    height: 5vh;
+}

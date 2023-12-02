@@ -1,0 +1,27 @@
+nav{
+    /* border: .1rem solid green; */
+    display: grid;
+    /* grid-template-areas:'head . .'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    align-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: rgb(18, 45, 2);
+    color: aliceblue;
+    /* width: 100%; */
+}
+button[type = 'submit']{
+    background-color: green;
+    color: white;
+}
+nav>ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}

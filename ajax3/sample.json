@@ -1,0 +1,25 @@
+[
+    {
+        "name":"johson",
+        "age":21,
+        "gender":"male",
+        "school":"cyclobold",
+        "image":"demo.png"
+    },
+    
+    {
+        "name":"Mark",
+        "age":20,
+        "gender":"male",
+        "school":"cyclobold",
+        "image":"demo.png"
+    },
+    
+    {
+        "name":"Olu",
+        "age":25,
+        "gender":"female",
+        "school":"cyclobold",
+        "image":"demo.png"
+    }
+]

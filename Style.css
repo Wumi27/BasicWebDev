@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: yellow;  */
+}
+#wrapper{
+    /* Background-color: black; clour: white; */
+}
+nav{
+    border: .7rem solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    /* height: 50vh; */
+    /* flex-direction: row-reverse; */
+}
+
+figure{
+    /* border: 0.5rem solid green; */
+    /* border-style: groove; */
+    /* border-color: blue; */
+    /* border-width: 2rem; */
+    border-top-style: hidden;
+    border-left-style: double;
+    border-left-color: blue;
+    list-style: none;
+}
+ul{
+    /* border: 10px double purple; */
+    display:flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 15%;   
+}
+ul>li{
+    border:.1rem solid blue;
+}
+a{
+    text-decoration: none;
+}
+#Log{
+    /* border: .5rem dashed grey; */
+}
+
+

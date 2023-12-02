@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Signup.css">
+    <title>Signup</title>
+</head>
+<body>
+    <div id="container">
+        <form action="javascript:void()" method="post">
+            <h3>Welcome to my Sign Up page</h3>
+            <fieldset>
+                <legend>Profile</legend>
+                <div class="upload">
+                    <label for="pics">Upload Picture</label>
+                    <input type="file" name="Picture" id="">
+                </div>
+                <div id="info">
+                    <!-- display message -->
+                </div>
+                <div class="Username">
+                    <!-- <label for="Username">Username</label> -->
+                    <input type="Text" placeholder="enter your username" value="" title="Fill in your username" name="Username" id="username">
+                </div>
+                <div class="Firstname">
+                    <!-- <label for="Firstname">Firstname</label> -->
+                    <input type="Text" placeholder="Firstname" name="Firstname" id="fname">
+                </div>
+                <div class="Lastname">
+                    <!-- <label for="Lastname">Lastname</label> -->
+                    <input type="Text" placeholder="Lastname" name="Lasttname" id="lname">
+                </div>
+                <div class="Password">
+                    <!-- <label for="Password">Password</label> -->
+                    <input type="password" placeholder="enter your password here" title="ade123$$" name="Password" id="pwd">
+                </div>
+                <div class="Gender">
+                    <label for="Gender">Gender:</label>
+                    <label for="Male">Male</label>
+                    <input type="radio" name="select">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="select">
+                    <label for="Custom">Custom</label>
+                    <input type="radio" name="select">
+                </div>
+                <fieldset>
+                   <Legend>Academic</Legend> 
+                   <select name="" id="">
+                    <option value="">Select your School</option>
+                    <option value="yct">yct</option>
+                    <option value="unilag">unilag</option>
+                    <option value="fstc">fstc</option>
+                    <option value="lasu">lasu</option>
+                   </select>
+                </fieldset>
+            </fieldset>   
+            <fieldset>
+                <legend>Cover Letter</legend>
+                    <textarea name="Cover Letter" id="" cols="50" rows="15"></textarea>
+            </fieldset>
+            <div class="controls">
+                <input type="submit" id="reg" value="Register">
+                <button type="reset">Reset</button>
+
+            </div> 
+        </form>
+    </div>
+    <script src="signuplocal.js"></script>
+</body>
+</html>

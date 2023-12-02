@@ -1,0 +1,44 @@
+nav{
+    /* border: .1rem solid green; */
+    display: grid;
+    /* grid-template-areas:'head . .'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    align-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    background-color: rgb(18, 45, 2);
+    color: aliceblue;
+    /* width: 100%; */
+}
+nav>form{
+    /* border: .1rem solid grey;  */
+    text-align: right;
+}
+form>input[type = 'search']{
+    outline: .1rem solid red
+}
+form>button[type = 'submit']{
+    background-color: green;
+    color: white;
+    margin-right: 5rem;
+}
+form>input[type = 'search'],  button[type = 'Submit']{
+    height: 5vh;
+    /* background-color: brown; */
+}
+nav>ul{
+    /* border: .1rem solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-items: space-between; */
+    gap: 1rem;
+}
+ul>li{
+    /* border: .1rem solid green; */
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+   <div id="wrapper">
+    <div class="two">two</div>
+    <div class="balls">div1</div>
+   </div> 
+   <style>
+    #wrapper{
+        positoin: relative;
+    }
+    .two{
+        background-color: red;
+        width: 20%;
+        height: 4rem;
+    }
+    .two:hover{
+        background-color: violet;
+        width: 20%;
+        height: 4rem;
+        transition: all .2s linear;
+        transform: translateX(50vw)
+    }
+    .balls{
+        position: absolute;
+        background-color: green;
+        width: 20%;
+        height: 4rem;
+        animation-name: movers;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation: movers 2s infinite alternate;
+    }
+    @keyframes movers{
+       20%{
+        transition: 50s linear all;
+        background-color: blue;
+        top: 0;
+       } 
+       40%{
+        background-color: green;
+        bottom: -20rem;
+       }
+       60%{
+        background-color: rgb(186, 19, 153);
+        right: 0;
+        left: auto;
+       }
+       80%{
+        background-color: yellow;
+        right: 2rem;
+       }
+       100%{
+        background-color: green;
+        bottom: -20rem;
+        transition: translatex(30rem);
+       }
+    }
+   </style>
+</body>
+</html>

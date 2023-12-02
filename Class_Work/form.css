@@ -1,0 +1,7 @@
+form{
+    margin-left: 0;
+}
+form>.fullname,.email,.number{
+    border: 1rem solid green;
+    gap:2rem
+}
